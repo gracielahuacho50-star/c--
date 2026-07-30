@@ -1,4 +1,7 @@
-/*Ejercicio 1 */
+/*Ejercicio 1 
+entrada: edades
+proceso : mostrar las edades registradas , pedir una edad adiciconal para buscar , indicar si fue encontrada o no 
+salida :mostrar si fue encontrada o no*/
 #include <iostream>
 using namespace std;
 int main () {

@@ -1,4 +1,7 @@
-/* Ejercicio 2*/
+/* Ejercicio 2
+entrada: cantidades
+proceso : mostrar las cantidades registradas , pedir una cantidad adiciconal para buscar .
+salida :mostrar su posicion o un mensja ediciendo q no fue encontrada*/
 #include <iostream> 
 using namespace std ;
 int main (){
@@ -10,7 +13,7 @@ int main (){
 
     for (i=0; i<6; i++ )
     {
-      cout << "Ingrese la cantidad : " << i + 1 << ": " << endl ;  
+      cout << "Ingrese la cantidad " << i + 1 << ": " << endl ;  
       cin >> cantidades [i] ;
     }
     cout<< endl ;
