@@ -11,10 +11,10 @@ Proceso: validar, almacenar, recorrer arreglos, calcular, clasificar y buscar.
 Salida: menú, reporte general, mensajes de validación y resultado de búsqueda.
 */
 #include <iostream> 
+# include <string> 
 using namespace std;
 int main () {
     int notas , opcion , buscado , cantidad ;
-    string nombres ;
     int i;
     int posicion = -1;
     bool encontrado = false 
@@ -53,9 +53,9 @@ int main () {
 
 
 
-            }
-        }
-    }while (opcion != 4)
+            
+        
+    }while (opcion != 4) 
       
       
   return 0 ; 
