@@ -1,13 +1,6 @@
 /* Graciela Huacho 
 Mini Proyecto 
-Una academia necesita un programa en C++ para registrar las notas finales de un grupo de estudiantes y
-consultar información básica del curso. El sistema trabajará con un máximo de 20 estudiantes.
-De cada estudiante se almacenará:
-• primer nombre (sin espacios);
-• nota final en escala de 0 a 20.
-Entrada : cantidad, nombres, notas, opción del menú y nombre a buscar.
-Proceso: validar, almacenar, recorrer arreglos, calcular, clasificar y buscar.
-Salida: menú, reporte general, mensajes de validación y resultado de búsqueda.
+
 */
 #include <iostream> 
 #include <string> 
@@ -57,9 +50,9 @@ int main () {
             case 5:
                 duracionTotalYCancionExtensa(titulo, duracion, cantidad);
                 break;
-                 case 6:
-        cout << "Saliendo del programa...";
-        break;
+            case 6:
+                 cout << "Saliendo del programa...";
+                 break;
             
             default:
                 cout << "Error: opcion invalida" << endl;
@@ -101,9 +94,40 @@ int main () {
       } 
      void buscarCancion(string titulo[], string artista[], double duracion[], int cantidad)
      {
+      string buscado;
+      bool encontrado = false;
+      cout << "Ingrese el titulo de la cancion que desea buscar: ";
+    cin >> buscado;
 
+    for (int i = 0; i < cantidad; i++)
+    {
+        if (titulo[i] == buscado)
+        {
+            cout << "Cancion encontrada." << endl;
+            cout << "Titulo: " << titulo[i] << endl;
+            cout << "Artista: " << artista[i] << endl;
+            cout << "Duracion: " << duracion[i] << endl;
 
+            encontrado = true;
+        }
+    }
+
+    if (encontrado == false)
+    {
+        cout << "La cancion no existe." << endl;
+    }
      }
+    void reporteGeneral(string titulo[], double duracion[], int cantidad){
+       for(int i = 0; i < cantidad; i++)
+    {
+        cout << "Cancion " << i + 1 << endl;
+        cout << "Titulo: " << titulo[i] << endl;
+        cout << "Artista: " << artista[i] << endl;
+        cout << "Duracion: " << duracion[i] << endl;
+        cout << "------------------------" << endl;
+    }
+}
+    
 
     return 0;
 }
