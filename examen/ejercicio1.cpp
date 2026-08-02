@@ -49,13 +49,13 @@ int main () {
                 
             }
             cout << endl ;
-            case = 2
+            case 2 :
 
 
 
             
         
-    }while (opcion != 4) 
+    }while (opcion != 4) ;
       
       
   return 0 ; 
