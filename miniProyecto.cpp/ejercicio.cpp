@@ -5,6 +5,7 @@ Mini Proyecto
 #include <iostream> 
 #include <string> 
 using namespace std;
+
 void registrarCancion(string titulo[], string artista[], double duracion[], int &cantidad);
 void mostrarCanciones(string titulo[], string artista[], double duracion[], int cantidad);
 void buscarCancion(string titulo[], string artista[], double duracion[], int cantidad);
@@ -20,7 +21,7 @@ int main () {
     string buscado ;
     bool encontrado = false ; 
     int posicion = -1 ;
-    float totalDuracion = 0 ;
+    double totalDuracion = 0 ;
     int mayor = 0 ; 
 
     do 
@@ -58,7 +59,8 @@ int main () {
                 cout << "Error: opcion invalida" << endl;
         }
     } while (opcion != 6);
-
+return 0 ;
+}
     void registrarCancion(string titulo[], string artista[], float duracion[], int& cantidad) 
     {
     if (cantidad >= 20) {
@@ -122,12 +124,28 @@ int main () {
     {
         cout << "Cancion " << i + 1 << endl;
         cout << "Titulo: " << titulo[i] << endl;
-        cout << "Artista: " << artista[i] << endl;
         cout << "Duracion: " << duracion[i] << endl;
         cout << "------------------------" << endl;
     }
 }
     
+   void duracionTotalYCancionExtensa(string titulo[], double duracion[], int cantidad){
+   double totalDuracion = 0;
+    int mayor = 0;
 
-    return 0;
-}
+    for(int i = 0; i < cantidad; i++)
+    {
+        totalDuracion = totalDuracion + duracion[i];
+
+        if(duracion[i] > duracion[mayor])
+        {
+            mayor = i;
+        }
+    }
+
+    cout << "Duracion total de la lista: " << totalDuracion << endl;
+    cout << "Cancion mas extensa: " << titulo[mayor] << endl;
+    cout << "Duracion: " << duracion[mayor] << endl;
+    }
+   
+    
