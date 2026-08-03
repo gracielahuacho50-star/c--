@@ -18,7 +18,7 @@ Como funcionalidad adicional, el programa calcula la duración total de todas la
 
 1. Abrir una terminal en la carpeta donde se encuentra el archivo "ejercicio1.cpp" .
 2. Compilar el programa con el comando:
-g++ ejercicio.cpp -o ejercicio
+g++ ejercicio1.cpp -o ejercicio1
 3 Ejecutamos el programa con : .\ejercicio1.exe
 
 ## Herramientas utilizadas 
