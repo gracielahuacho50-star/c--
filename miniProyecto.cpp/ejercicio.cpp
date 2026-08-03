@@ -1,13 +1,6 @@
 /* Graciela Huacho 
 Mini Proyecto 
-Una academia necesita un programa en C++ para registrar las notas finales de un grupo de estudiantes y
-consultar información básica del curso. El sistema trabajará con un máximo de 20 estudiantes.
-De cada estudiante se almacenará:
-• primer nombre (sin espacios);
-• nota final en escala de 0 a 20.
-Entrada : cantidad, nombres, notas, opción del menú y nombre a buscar.
-Proceso: validar, almacenar, recorrer arreglos, calcular, clasificar y buscar.
-Salida: menú, reporte general, mensajes de validación y resultado de búsqueda.
+
 */
 #include <iostream> 
 #include <string> 
