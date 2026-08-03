@@ -31,7 +31,7 @@ int main () {
      cout << " 2. Mostrar canciones  "<< endl ;
      cout << " 3. Buscar canciones"<< endl ;
      cout << " 4. Reporte general " << endl ;
-     cout << " 5. Duración total de la lista y canción más extensa. "<< endl  ;
+     cout << " 5. Duracion total de la lista y canción mas extensa. "<< endl  ;
      cout << " 6. Salir "<< endl  ;
      cout << " Selecciones una opcion "<< endl  ;
      cin >> opcion ; 
@@ -61,7 +61,7 @@ int main () {
     } while (opcion != 6);
 return 0 ;
 }
-    void registrarCancion(string titulo[], string artista[], float duracion[], int& cantidad) 
+    void registrarCancion(string titulo[], string artista[], double duracion[], int& cantidad) 
     {
     if (cantidad >= 20) {
         cout << "Cantidad invalida , intente nuevamente." << endl;
