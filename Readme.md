@@ -1,5 +1,4 @@
-# Mini proyecto : Gestion de canciones #
-
+# Mini Proyecto : Gestion de canciones
 ## Descripcion 
 Proyecto de programacion en c++ creado para demostrar los conocimiento adquiridos durante el curso . 
 Este proyecto tiene la finalidad de administrar una lista de canciones donde el usuario puede registrar, consultar y buscar información de las canciones mediante un menú . Para lograr este fin he utilizado : variables, condicionales, bucles, arreglos, búsqueda secuencial, funciones, validaciones y un menú repetitivo. 
@@ -13,7 +12,7 @@ Buscar una canción: permite localizar una canción mediante su título para com
 Salir del programa: finaliza la ejecución del sistema cuando el usuario selecciona esta opción.
 ## Funcionalidad creativa
 
-Como funcionalidad adicional, el programa calcula la duración total de todas las canciones registradas e identifica la canción con la mayor duración.
+Encontrar la canción más extensa: permite analizar las canciones registradas y comparar sus duraciones para identificar cuál tiene el mayor tiempo de reproducción. Esta función agrega un elemento adicional al sistema, ya que no solo permite almacenar y mostrar información, sino también realizar un análisis de los datos guardados para obtener un resultado específico.
 
 ## Instrucciones para compilar y ejecutar
 
@@ -24,4 +23,5 @@ g++ ejercicio.cpp -o ejercicio
 ## Autor
 
 Graciela Huacho
+
 
